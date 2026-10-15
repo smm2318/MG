@@ -12,8 +12,8 @@
     "electron-builder": "^24.13.3"
   },
   "build": {
-    "appId": "com.example.mybrowser",
-    "productName": "MyBrowser",
+    "appId": "com.mg.browser",
+    "productName": "mg",
     "files": ["main.js", "src/**/*"],
     "win": { "target": "portable" },
     "linux": { "target": "AppImage", "category": "Network" },
