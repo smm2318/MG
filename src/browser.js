@@ -30,6 +30,7 @@ function createTab(url = HOME) {
   view.src = url;
   view.classList.add('hidden');
   viewsEl.appendChild(view);
+  applyGoogleTheme(view);
 
   const tabEl = document.createElement('div');
   tabEl.className = 'tab';
