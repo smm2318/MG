@@ -1,0 +1,22 @@
+{
+  "name": "mg-browser",
+  "version": "0.1.0",
+  "description": "MG browser - searches with Google",
+  "author": "sayyed_mohsen_mirabolghasemi",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.example.mybrowser",
+    "productName": "MyBrowser",
+    "files": ["main.js", "src/**/*"],
+    "win": { "target": "portable" },
+    "linux": { "target": "AppImage", "category": "Network" },
+    "mac": { "target": "dmg" }
+  }
+}
